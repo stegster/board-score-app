@@ -1,10 +1,10 @@
 {
-  "name": "Board Game Scorer",
-  "short_name": "GameScore",
+  "name": "Fantasy Board Scorer \u2014 Final",
+  "short_name": "F-Scorer",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#1b1b2f",
-  "theme_color": "#ff6f61",
+  "background_color": "#071123",
+  "theme_color": "#c89f44",
   "icons": [
     {
       "src": "icons/icon-192.png",

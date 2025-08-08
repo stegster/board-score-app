@@ -1,14 +1,240 @@
 [
   {
-    "name": "Catan",
-    "scoringFields": ["Victory Points"]
-  },
-  {
     "name": "Wingspan",
-    "scoringFields": ["Birds", "Bonus Cards", "End of Round", "Eggs", "Food", "Tucked Cards"]
+    "rounds": true,
+    "roundsDefault": 4,
+    "scoringFields": [
+      {
+        "key": "birds",
+        "label": "Birds",
+        "helper": "Points from birds (sum of printed points on bird cards)."
+      },
+      {
+        "key": "bonus",
+        "label": "Bonus Cards",
+        "helper": "Points from private bonus cards."
+      },
+      {
+        "key": "end_of_round",
+        "label": "End of Round Goals",
+        "helper": "Points scored from round goals."
+      },
+      {
+        "key": "eggs",
+        "label": "Eggs",
+        "helper": "1 point per egg."
+      },
+      {
+        "key": "food",
+        "label": "Food",
+        "helper": "Points from cached food (if variant)."
+      },
+      {
+        "key": "tucked",
+        "label": "Tucked Cards",
+        "helper": "1 point per tucked card."
+      }
+    ]
   },
   {
     "name": "Wyrmspan",
-    "scoringFields": ["Dragons", "Treasures", "Lair Bonuses", "Eggs", "Exploration", "Fame"]
+    "rounds": true,
+    "roundsDefault": 6,
+    "scoringFields": [
+      {
+        "key": "dragons",
+        "label": "Dragons",
+        "helper": "Points from dragon cards and lair dragons."
+      },
+      {
+        "key": "treasures",
+        "label": "Treasures",
+        "helper": "Value of treasures collected."
+      },
+      {
+        "key": "lair",
+        "label": "Lair Bonuses",
+        "helper": "Bonuses for lair upgrades."
+      },
+      {
+        "key": "eggs",
+        "label": "Eggs",
+        "helper": "Points for eggs laid."
+      },
+      {
+        "key": "exploration",
+        "label": "Exploration",
+        "helper": "Exploration objective points."
+      },
+      {
+        "key": "fame",
+        "label": "Fame",
+        "helper": "End-game fame points."
+      }
+    ]
+  },
+  {
+    "name": "Catan",
+    "rounds": false,
+    "scoringFields": [
+      {
+        "key": "vp",
+        "label": "Victory Points",
+        "helper": "Total VP including settlements, cities, longest road, largest army."
+      },
+      {
+        "key": "longest",
+        "label": "Longest Road",
+        "helper": "Detect if player gets +2 VP."
+      },
+      {
+        "key": "largest",
+        "label": "Largest Army",
+        "helper": "Detect if player gets +2 VP."
+      },
+      {
+        "key": "dev",
+        "label": "Development Cards",
+        "helper": "VP from played development cards."
+      }
+    ]
+  },
+  {
+    "name": "Azul",
+    "rounds": true,
+    "roundsDefault": 5,
+    "scoringFields": [
+      {
+        "key": "pattern",
+        "label": "Pattern Lines",
+        "helper": "Points from completed pattern lines."
+      },
+      {
+        "key": "floor",
+        "label": "Floor Line",
+        "helper": "Penalties: subtract points for floor tiles."
+      },
+      {
+        "key": "rows",
+        "label": "Completed Rows",
+        "helper": "Points from completed rows."
+      },
+      {
+        "key": "columns",
+        "label": "Completed Columns",
+        "helper": "Points from completed columns."
+      },
+      {
+        "key": "colors",
+        "label": "Completed Colors",
+        "helper": "Points from color sets."
+      }
+    ]
+  },
+  {
+    "name": "Cascadia",
+    "rounds": false,
+    "scoringFields": [
+      {
+        "key": "species",
+        "label": "Species Sets",
+        "helper": "Points from matching species patterns."
+      },
+      {
+        "key": "landscape",
+        "label": "Landscape",
+        "helper": "Points from landscape placement goals."
+      },
+      {
+        "key": "diversity",
+        "label": "Diversity",
+        "helper": "Diversity scoring bonuses."
+      }
+    ]
+  },
+  {
+    "name": "Costa Rica (Nature)",
+    "rounds": false,
+    "scoringFields": [
+      {
+        "key": "animal",
+        "label": "Animals",
+        "helper": "Points from animals placed."
+      },
+      {
+        "key": "habitat",
+        "label": "Habitat",
+        "helper": "Points for habitats."
+      },
+      {
+        "key": "bonus",
+        "label": "Bonus Objectives",
+        "helper": "Points from bonus objective cards."
+      }
+    ]
+  },
+  {
+    "name": "Fire Tower",
+    "rounds": false,
+    "scoringFields": [
+      {
+        "key": "forest",
+        "label": "Forest Points",
+        "helper": "Points for forest preservation."
+      },
+      {
+        "key": "towers",
+        "label": "Tower Points",
+        "helper": "Points from towers and routing."
+      },
+      {
+        "key": "goals",
+        "label": "Objectives",
+        "helper": "Points from objectives reached."
+      }
+    ]
+  },
+  {
+    "name": "Lost Ruins of Arnak",
+    "rounds": true,
+    "roundsDefault": 5,
+    "scoringFields": [
+      {
+        "key": "artifacts",
+        "label": "Artifacts",
+        "helper": "Points from artifacts gathered."
+      },
+      {
+        "key": "research",
+        "label": "Research",
+        "helper": "Points from research track."
+      },
+      {
+        "key": "temples",
+        "label": "Temples",
+        "helper": "Points unlocked via temple tiles."
+      },
+      {
+        "key": "resources",
+        "label": "Resources",
+        "helper": "End-game resource values."
+      },
+      {
+        "key": "skills",
+        "label": "Companions & Skills",
+        "helper": "Points from companions and skills."
+      }
+    ]
+  },
+  {
+    "name": "Nature (generic)",
+    "rounds": false,
+    "scoringFields": [
+      {
+        "key": "points",
+        "label": "Points",
+        "helper": "General point tally."
+      }
+    ]
   }
 ]
